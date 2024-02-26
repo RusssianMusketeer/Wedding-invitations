@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-image: url("back.webp");
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.sub-Header {
+		background-color: rgb(24, 27, 55);
+		height: 400px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		.header-name {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			margin: 0;
+			color: white;
+			font-family: "MonteCarlo";
+			font-weight: 400;
+			font-size: 7rem;
+		}
+		.portrait {
+			background-size: contain;
+			max-width: 27rem;
+		}
+	}
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
