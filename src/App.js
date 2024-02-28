@@ -2,7 +2,7 @@ import "./App.scss";
 import portrait from "./portrait.jpeg";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import Music from "./music.mp3";
+import Music from "./Assets/music.mp3";
 
 const App = () => {
 	return (
