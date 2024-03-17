@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
+
+.Header-Text {
+	background-color: rgb(186, 190, 213);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 2.2rem;
+
+	.title {
+		font-size: 3.2rem;
+		line-height: 0.6em;
+		text-align: center;
+		font-family: "MonteCarlo";
+		font-weight: 400;
+		margin: 2rem 0;
+	}
+
+	.text {
+		font-size: 19px;
+		font-family: "Josefin Slab", serif;
+		font-style: italic;
+		font-weight: 400;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		max-width: 50rem;
+	}
+
+	.parents-text {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 3rem;
+		gap: 5rem;
+		font-size: 19px;
+		font-family: "Josefin Slab", serif;
+		font-style: italic;
+		font-weight: 400;
+
+		.names-section {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
+}
+
+.parents-display {
+	flex-direction: column;
+}

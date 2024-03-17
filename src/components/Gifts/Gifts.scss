@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
+
+.gifts-component {
+	background-color: rgb(24, 27, 55);
+	width: 100%;
+	padding: 3rem 0;
+
+	.gifts-container {
+		background-color: white;
+		max-width: 30rem;
+		height: auto;
+		margin: 0 auto;
+		padding: 2rem;
+		border-radius: 1rem;
+		box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.47);
+
+		.gifts-icon {
+			height: 5rem;
+			width: auto;
+		}
+
+		.gifts-header {
+			font-size: 3.2rem;
+			line-height: 0.6em;
+			text-align: center;
+			font-family: "MonteCarlo";
+			font-weight: 400;
+		}
+
+		.gifts-text {
+			font-size: 1.2rem;
+			font-family: "Josefin Slab", serif;
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
+}

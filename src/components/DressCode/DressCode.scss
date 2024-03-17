@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
+
+.DressCode-component {
+	background-color: rgb(186, 190, 213);
+	width: 100%;
+	margin-top: 2rem;
+
+	.DressCode-container {
+		margin: 2.5rem 0;
+		.DressCode-Icon {
+			height: 5rem;
+			width: auto;
+		}
+
+		.DressCode-header {
+			font-size: 3.2rem;
+			line-height: 0.6em;
+			text-align: center;
+			font-family: "MonteCarlo";
+			font-weight: 400;
+		}
+		.DressCode-text {
+			font-size: 1.2rem;
+			font-family: "Josefin Slab", serif;
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
+}

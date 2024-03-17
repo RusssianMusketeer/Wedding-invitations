@@ -16,47 +16,54 @@
 }
 
 .App-header {
-	background-image: url("./Assets/back.webp");
-	min-height: 100vh;
+	background-image: url("../Assets/back.webp");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-blend-mode: overlay;
+	background-color: rgba(255, 253, 248, 0.7);
 
 	.sub-Header {
 		background-color: rgb(24, 27, 55);
-		height: 400px;
+		height: 31rem;
+		margin-top: 6rem;
+		padding-top: 2rem;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 
-		.header-name {
+		.header-section {
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
 			align-items: center;
-			height: 100%;
-			margin: 0;
-			color: white;
-			font-family: "MonteCarlo";
-			font-weight: 400;
-			font-size: 7rem;
+			.icon {
+				width: 13rem;
+			}
+
+			.header-name {
+				height: 100%;
+				margin: 0;
+				color: white;
+				font-family: "MonteCarlo";
+				font-weight: 400;
+				font-size: 7rem;
+			}
+
+			.audio-player {
+				background-color: rgb(16, 30, 162);
+				width: 500px;
+			}
 		}
+	}
+	.background {
+		background-image: url("../Assets/back.webp");
+
+		position: relative;
+		bottom: 2rem;
 		.portrait {
 			background-size: contain;
 			max-width: 27rem;
 		}
-	}
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
 	}
 }

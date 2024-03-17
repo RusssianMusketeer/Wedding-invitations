@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
+@import url("https://db.onlinewebfonts.com/c/4c0277bcba75a3570694a90365e79f29?family=Droid+Serif+W01+Regular");
+
+.date-text {
+	font-size: 2.5rem;
+	font-family: "Josefin Slab";
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	margin-bottom: 0;
+}
+
+.header-wedding {
+	font-family: "MonteCarlo";
+	font-weight: 400;
+	font-size: 6rem;
+	margin: 0;
+}
+
+.wrapper-date-countdown {
+	background: rgba(24, 27, 55, 0.93);
+	max-width: 23rem;
+	height: calc(100% - 12px);
+	font-size: 21px;
+	border-width: 1px;
+	border-radius: 0.5rem;
+	display: flex;
+	padding: 0.5rem;
+
+	.date-containers {
+		height: 3.5rem;
+		width: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&-values {
+			color: white;
+			font-size: 1.5rem;
+			font-weight: 800;
+			font-family: "Droid Serif W01 Regular";
+		}
+	}
+}
+
+.seperator {
+	width: 119px;
+	height: 76px;
+	object-fit: cover;
+	object-position: 50% 50%;
+	margin: 3rem 0;
+}
