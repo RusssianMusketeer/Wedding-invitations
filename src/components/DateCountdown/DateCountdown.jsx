@@ -13,7 +13,7 @@ const DateCountdown = () => {
 	return (
 		<>
 			<div>
-				<p className="date-text">10 de Agosto 2024</p>
+				<p className="date-text">27 de Julio 2024</p>
 				<h1 className="header-wedding">Nuestra Boda</h1>
 			</div>
 			<div className="wrapper-date-countdown">

@@ -13,6 +13,8 @@ import Gifts from "../components/Gifts/Gifts";
 import DressCode from "../components/DressCode/DressCode";
 import Invitation from "../components/Invitation/Invitation";
 import Form from "../components/Form/Form";
+import EndImage from "../components/EndImage/EndImage";
+import SvgComponent from "../components/Icon2";
 
 const Home = () => {
 	return (
@@ -23,7 +25,7 @@ const Home = () => {
 						<div className="icon">
 							<Icon />
 						</div>
-						<h1 className="header-name">Arseni y Joselyn</h1>
+						<h1 className="header-name">Arseni & Joselyn</h1>
 
 						<ReactAudioPlayer
 							autoPlay={true}
@@ -48,10 +50,12 @@ const Home = () => {
 				<DateCountdown />
 				<HeaderText title={"Con la bendición de nuestros padres"} />
 				<CeremonyMap />
-				<Gifts />
+				<Gifts gifts={true} />
 				<DressCode />
 				<Invitation />
 				<Form />
+				<EndImage />
+				<Gifts gifts={false} />
 			</div>
 		</div>
 	);

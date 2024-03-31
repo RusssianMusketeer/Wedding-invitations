@@ -1,14 +1,18 @@
 import "./Invitation.scss";
 import seperatorRight from "../../Assets/seperator.webp";
 import seperatorLeft from "../../Assets/separador dorado_edited-2.webp";
+import KidsIcon from "./KidsIcon";
 
 const Invitation = () => {
 	return (
 		<div className="Invitation-component">
 			<div>
 				<div>
-					<h1 className="Invitation-header">Niños</h1>
-					<span className="Invitation-text">Buenas noches</span>
+					<h1 className="Invitation-header">Respetuosamente</h1>
+					<div className="flex-kids">
+						<span className="Invitation-text">Sin niños</span>
+						<KidsIcon />
+					</div>
 					<div className="Invitation-Icon-container">
 						<img
 							className="Invitation-Icon"

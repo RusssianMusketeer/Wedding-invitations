@@ -3,6 +3,23 @@
 
 .Invitation-component {
 	margin-top: 2rem;
+	.flex-kids {
+		display: flex;
+		flex-direction: column;
+
+		.kids-icon {
+			width: 4rem;
+			margin: 0 auto;
+			margin-top: 1rem;
+		}
+
+		.Invitation-text {
+			font-size: 1.2rem;
+			font-family: "Josefin Slab", serif;
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
 
 	.Invitation-header {
 		font-size: 3.2rem;
@@ -12,6 +29,7 @@
 		font-weight: 400;
 		margin-top: 0.5rem;
 	}
+
 	.Invitation-text {
 		font-size: 1.2rem;
 		font-family: "Josefin Slab", serif;

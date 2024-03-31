@@ -7,59 +7,132 @@
 
 	.ceremony-svg {
 		height: 7.5rem;
+		width: auto;
 	}
 
-	.reception-container {
+	.recepcion-section {
 		display: flex;
 		flex-direction: column;
-		.reception-header {
-			font-size: 3.2rem;
-			line-height: 0.6em;
-			text-align: center;
-			font-family: "MonteCarlo";
-			font-weight: 400;
-			margin-bottom: 2.5rem;
-		}
-		.reception-time {
-			font-size: 2rem;
-			font-family: "Josefin Slab", serif;
-			font-style: italic;
-			font-weight: 400;
-			margin-bottom: 1.5rem;
-		}
+		.recepcion-sub-section {
+			padding: 3em;
+			display: flex;
+			.reception-container {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				.reception-video {
+					display: flex;
+					flex-direction: column;
+					flex: 1;
+					.reception-header {
+						font-size: 4.5rem;
+						line-height: 0.9em;
+						text-align: center;
+						font-family: "MonteCarlo";
+						font-weight: 400;
+						margin-bottom: 2.5rem;
+						margin-top: 1rem;
+					}
+					.reception-adresse {
+						font-size: 1.4rem;
+						line-height: 2rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 400;
+					}
+					.container-button {
+						height: 100%;
+						display: flex;
+						align-items: flex-end;
+						justify-content: center;
+						.reception-button-video {
+							width: 9.5rem;
+							height: 3.2rem;
+							background-color: rgb(134, 134, 134);
+							border: none;
+							border-radius: 0.3rem;
+							font-family: "Heebo", sans-serif;
+							font-weight: 600;
+							color: rgb(69, 69, 69);
+							transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
 
-		.reception-cater {
-			font-size: 1.5rem;
-			font-family: "Josefin Slab", serif;
-			font-style: italic;
-			font-weight: 400;
-			margin-bottom: 1.5rem;
-		}
-
-		.reception-adresse {
-			font-size: 1.2rem;
-			font-family: "Josefin Slab", serif;
-			font-style: italic;
-			font-weight: 400;
-			margin-bottom: 3rem;
-		}
-
-		.reception-button {
-			width: 9.5rem;
-			height: 3.2rem;
-			background-color: rgb(208, 208, 208);
-			border: none;
-			border-radius: 0.3rem;
-			font-family: "Heebo", sans-serif;
-			font-weight: 600;
-			color: rgb(69, 69, 69);
-			transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
-			margin-bottom: 4rem;
-			&:hover {
-				background-color: rgb(50, 50, 50);
-				color: rgb(255, 255, 255);
+							&:hover {
+								background-color: rgb(50, 50, 50);
+								color: rgb(255, 255, 255);
+							}
+							cursor: pointer;
+						}
+					}
+					.reception-time {
+						font-size: 2rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 600;
+						margin-bottom: 1.5rem;
+					}
+				}
 			}
-			cursor: pointer;
+
+			.reception-container {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				.reception-column {
+					display: flex;
+					flex-direction: column;
+
+					.reception-header {
+						font-size: 4.5rem;
+						line-height: 0.6em;
+						text-align: center;
+						font-family: "MonteCarlo";
+						font-weight: 400;
+						margin-bottom: 2.5rem;
+					}
+					.reception-time {
+						font-size: 2rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 600;
+						margin-bottom: 1.5rem;
+					}
+
+					.reception-cater {
+						font-size: 1.5rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 400;
+						margin-bottom: 1.5rem;
+					}
+
+					.reception-adresse {
+						font-size: 1.4rem;
+						line-height: 2rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 400;
+					}
+				}
+
+				.reception-button {
+					width: 9.5rem;
+					height: 3.2rem;
+					background-color: rgb(208, 208, 208);
+					border: none;
+					border-radius: 0.3rem;
+					font-family: "Heebo", sans-serif;
+					font-weight: 600;
+					color: rgb(69, 69, 69);
+					transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
+
+					margin-top: 3rem;
+					&:hover {
+						background-color: rgb(50, 50, 50);
+						color: rgb(255, 255, 255);
+					}
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }
