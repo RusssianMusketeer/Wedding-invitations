@@ -37,6 +37,7 @@ const Home = () => {
 				</div>
 				<div className="background">
 					<img
+						alt="portrait"
 						className="portrait"
 						src={portrait}></img>
 				</div>

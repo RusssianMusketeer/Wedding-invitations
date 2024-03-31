@@ -28,24 +28,28 @@ const Fade = () => {
 			<Slider {...settings}>
 				<div>
 					<img
+						alt="image1"
 						className="images"
 						src={image1}
 					/>
 				</div>
 				<div>
 					<img
+						alt="image2"
 						className="images"
 						src={image2}
 					/>
 				</div>
 				<div>
 					<img
+						alt="image3"
 						className="images"
 						src={image3}
 					/>
 				</div>
 				<div>
 					<img
+						alt="image4"
 						className="images"
 						src={image4}
 					/>

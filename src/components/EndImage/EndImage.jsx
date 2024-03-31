@@ -5,6 +5,7 @@ const EndImage = () => {
 	return (
 		<div className="image-end-container">
 			<img
+				alt="happy-Couple"
 				className="image-end"
 				src={Picture}></img>
 		</div>
