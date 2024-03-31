@@ -14,7 +14,6 @@ import DressCode from "../components/DressCode/DressCode";
 import Invitation from "../components/Invitation/Invitation";
 import Form from "../components/Form/Form";
 import EndImage from "../components/EndImage/EndImage";
-import SvgComponent from "../components/Icon2";
 
 const Home = () => {
 	return (
