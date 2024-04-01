@@ -13,6 +13,9 @@ const Invitation = () => {
 						<span className="Invitation-text">Sin niños</span>
 						<KidsIcon />
 					</div>
+					<div className="container-pass">
+						<h1>Pase por 1 personna</h1>
+					</div>
 					<div className="Invitation-Icon-container">
 						<img
 							className="Invitation-Icon"

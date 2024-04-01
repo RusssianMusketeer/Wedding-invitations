@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 .App {
 	text-align: center;
+	overflow-x: hidden;
 }
 
 .App-logo {
@@ -45,14 +46,28 @@
 				height: 100%;
 				margin: 0;
 				color: white;
-				font-family: "MonteCarlo";
 				font-weight: 400;
 				font-size: 7rem;
+				font-family: "Parisienne", cursive;
 			}
 
 			.audio-player {
-				background-color: rgb(16, 30, 162);
+				background-color: rgb(24, 27, 55);
 				width: 500px;
+			}
+
+			audio::-webkit-media-controls-panel {
+				background-color: rgb(24, 27, 55);
+			}
+			audio::-webkit-media-controls-enclosure {
+				border-radius: 0;
+			}
+			audio::-webkit-media-controls-fullscreen-button {
+				display: none;
+			}
+
+			audio::-webkit-media-controls-play-button {
+				color: white !important;
 			}
 		}
 	}

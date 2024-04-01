@@ -30,6 +30,7 @@ const Home = () => {
 							autoPlay={true}
 							src={Music}
 							loop={true}
+							style={{ Color: "#FF0000" }}
 							controls
 							className="audio-player"
 						/>

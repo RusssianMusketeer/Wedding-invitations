@@ -3,6 +3,21 @@
 
 .Invitation-component {
 	margin-top: 2rem;
+
+	.container-pass {
+		font-family: "MonteCarlo";
+		font-weight: 700;
+		font-size: 1.2rem;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		margin: 1.5rem 0;
+
+		h1 {
+			margin: 0.6rem 0;
+		}
+	}
 	.flex-kids {
 		display: flex;
 		flex-direction: column;

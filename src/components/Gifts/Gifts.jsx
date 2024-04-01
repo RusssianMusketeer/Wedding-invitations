@@ -27,8 +27,10 @@ const Gifts = ({ gifts }) => {
 						</p>
 						<span className="gifts-Span-header">Transferencia bancaria</span>
 						<span className="gifts-Span">Nombre: Joselyn Judith</span>
-						<span className="gifts-Span">Banco: BBVA</span>
-						<span className="gifts-Span">0000-0000-0000</span>
+						<span className="gifts-Span">Banco: BCP</span>
+						<span className="gifts-Span">19132454794018</span>
+						<span className="gifts-Span">Numero de cuenta interbancaria</span>
+						<span className="gifts-Span">00219113245479401852</span>
 						<span className="gifts-Span-header">E-transfer</span>
 						<span className="gifts-Span">Nombre: Arseni Dmitriev</span>
 						<span className="gifts-Span">
