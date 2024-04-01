@@ -14,7 +14,7 @@ const Invitation = () => {
 						<KidsIcon />
 					</div>
 					<div className="container-pass">
-						<h1>Pase por 1 personna</h1>
+						<h1>Pase por 1 persona</h1>
 					</div>
 					<div className="Invitation-Icon-container">
 						<img

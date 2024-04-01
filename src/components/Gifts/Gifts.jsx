@@ -27,19 +27,18 @@ const Gifts = ({ gifts }) => {
 						</p>
 						<span className="gifts-Span-header">Transferencia bancaria</span>
 						<span className="gifts-Span">Nombre: Joselyn Judith</span>
-						<span className="gifts-Span">Banco: BCP</span>
+						<span className="gifts-Span-BCP">BCP</span>
 						<span className="gifts-Span">19132454794018</span>
-						<span className="gifts-Span">Numero de cuenta interbancaria</span>
+						<span className="gifts-Span">CCI</span>
 						<span className="gifts-Span">00219113245479401852</span>
 						<span className="gifts-Span-header">E-transfer</span>
 						<span className="gifts-Span">Nombre: Arseni Dmitriev</span>
 						<span className="gifts-Span">
 							Correo electrónico: 195limitless@gmail.com
 						</span>
-						<span className="gifts-Span">Mobile: 514-560-0334</span>
-						<span className="gifts-Span">Gracias</span>
+						<span className="gifts-Span">¡Gracias!</span>
 						<p className="gifts-text">
-							Por tu muestro de cariño y espero verte en este dia tan especial
+							Por tu muestra de cariño y espero verte en este dia tan especial.
 						</p>
 					</div>
 				</div>
