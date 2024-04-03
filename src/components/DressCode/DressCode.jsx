@@ -3,6 +3,7 @@ import DressCodeIcon from "./DressCodeIcon";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const DressCode = () => {
 	const control = useAnimation();
@@ -17,6 +18,7 @@ const DressCode = () => {
 			control.start("visible");
 		}
 	});
+	const { t } = useTranslation();
 	return (
 		<div className="DressCode-component">
 			<motion.div
@@ -28,7 +30,7 @@ const DressCode = () => {
 					<div>
 						<DressCodeIcon />
 					</div>
-					<h1 className="DressCode-header">Código de Vestimenta</h1>
+					<h1 className="DressCode-header">{t("Clothes")}</h1>
 					<span className="DressCode-text">Formal</span>
 				</div>
 			</motion.div>

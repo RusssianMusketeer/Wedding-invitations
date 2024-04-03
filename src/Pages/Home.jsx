@@ -14,8 +14,14 @@ import DressCode from "../components/DressCode/DressCode";
 import Invitation from "../components/Invitation/Invitation";
 import Form from "../components/Form/Form";
 import EndImage from "../components/EndImage/EndImage";
+import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 
 const Home = () => {
+	const { t, i18n } = useTranslation();
+	const { lang } = useParams();
+	i18n.changeLanguage(lang);
+
 	return (
 		<div className="App">
 			<div className="App-header">
@@ -42,14 +48,10 @@ const Home = () => {
 						className="portrait"
 						src={portrait}></img>
 				</div>
-				<HeaderText
-					text={
-						"Ya lo tenemos todo… El traje, la tarta, la decoración, las flores y la comida, pero aun nos falta algo super importante, vuestra presencia en nuestra boda"
-					}
-				/>
+				<HeaderText text={t("Header")} />
 				<CarouselImages />
 				<DateCountdown />
-				<HeaderText title={"Con la bendición de nuestros padres"} />
+				<HeaderText title={t("Fathers bleesing")} />
 				<CeremonyMap />
 				<Gifts gifts={true} />
 				<DressCode />

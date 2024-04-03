@@ -1,6 +1,7 @@
 import "./DateCountdown.scss";
 import { useCountdown } from "../../Utils/useCountdown";
 import seperator from "../../Assets/seperator.webp";
+import { useTranslation } from "react-i18next";
 
 const DateCountdown = () => {
 	const [days, hours, minutes, seconds] = useCountdown();
@@ -10,12 +11,13 @@ const DateCountdown = () => {
 		M: minutes,
 		S: seconds,
 	};
+	const { t } = useTranslation();
 
 	return (
 		<>
 			<div>
-				<p className="date-text">27 de Julio 2024</p>
-				<h1 className="header-wedding">Nuestra Boda</h1>
+				<p className="date-text">{t("27 July")}</p>
+				<h1 className="header-wedding">{t("Our Wedding")}</h1>
 			</div>
 			<div className="wrapper-date-countdown">
 				{Object.keys(dateObject).map((element, index) => (

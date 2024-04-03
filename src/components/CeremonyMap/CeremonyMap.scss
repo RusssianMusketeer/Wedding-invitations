@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 
 .CeremonyMap {
-	margin-top: 4rem;
-
+	margin-top: 1rem;
 	.ceremony-svg {
 		height: 7.5rem;
 		width: auto;
@@ -13,6 +12,20 @@
 	.recepcion-section {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 3rem;
+		.Invitation-Icon-container {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+
+			.Invitation-Icon {
+				width: 119px;
+				height: 76px;
+				object-fit: cover;
+				object-position: 50% 50%;
+				margin: 1rem 0;
+			}
+		}
 		.recepcion-sub-section {
 			padding: 3em;
 			display: flex;
@@ -80,10 +93,14 @@
 				.reception-column {
 					display: flex;
 					flex-direction: column;
+					.foodIcon {
+						height: 7.5rem;
+						width: auto;
+					}
 
 					.reception-header {
 						font-size: 4.5rem;
-						line-height: 0.6em;
+						line-height: 0.9em;
 						text-align: center;
 						font-family: "MonteCarlo";
 						font-weight: 400;

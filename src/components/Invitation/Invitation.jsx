@@ -2,19 +2,21 @@ import "./Invitation.scss";
 import seperatorRight from "../../Assets/seperator.webp";
 import seperatorLeft from "../../Assets/separador dorado_edited-2.webp";
 import KidsIcon from "./KidsIcon";
+import { useTranslation } from "react-i18next";
 
 const Invitation = () => {
+	const { t } = useTranslation();
 	return (
 		<div className="Invitation-component">
 			<div>
 				<div>
-					<h1 className="Invitation-header">Respetuosamente</h1>
+					<h1 className="Invitation-header">{t("Respect")}</h1>
 					<div className="flex-kids">
-						<span className="Invitation-text">Sin niños</span>
+						<span className="Invitation-text">{t("No kids")}</span>
 						<KidsIcon />
 					</div>
 					<div className="container-pass">
-						<h1>Pase por 1 persona</h1>
+						<h1>{t("Pass")}</h1>
 					</div>
 					<div className="Invitation-Icon-container">
 						<img
@@ -29,7 +31,7 @@ const Invitation = () => {
 						/>
 					</div>
 
-					<h1 className="Invitation-header">Confirma tu Asistencia</h1>
+					<h1 className="Invitation-header">{t("Confirm")}</h1>
 				</div>
 			</div>
 		</div>

@@ -2,11 +2,16 @@ import "./CeremonyMap.scss";
 import Icon from "./Icon";
 import CeremonyIcon from "./CeremonyIcon";
 import StreamIcon from "./StreamIcon";
+import foodIcon from "../../Assets/food.svg";
+import seperatorRight from "../../Assets/seperator.webp";
+import seperatorLeft from "../../Assets/separador dorado_edited-2.webp";
+import { useTranslation } from "react-i18next";
 
 const CeremonyMap = () => {
 	const handleClick = (url) => {
 		window.open(url, "_blank", "noreferrer");
 	};
+	const { t } = useTranslation();
 
 	return (
 		<div className="CeremonyMap">
@@ -15,8 +20,8 @@ const CeremonyMap = () => {
 					<div className="reception-container">
 						<div className="reception-column">
 							<CeremonyIcon />
-							<h1 className="reception-header">Ceremonia</h1>
-							<span className="reception-time">27 de Julio </span>
+							<h1 className="reception-header">{t("Ceremony")}</h1>
+							<span className="reception-time">{t("27 July")}</span>
 							<span className="reception-time">11:00 am</span>
 							<span className="reception-cater">Mona salehi notaire</span>
 							<span className="reception-adresse">
@@ -33,7 +38,7 @@ const CeremonyMap = () => {
 										"https://www.google.com/maps/place/1602A+Av.+Selkirk,+Montr%C3%A9al,+QC+H3H+1C6/@45.496355,-73.5829755,16z/data=!3m1!4b1!4m6!3m5!1s0x4cc91a152c50a945:0xc246836f960198e!8m2!3d45.496355!4d-73.5829755!16s%2Fg%2F11c5cp6tvc?entry=ttu"
 									)
 								}>
-								Ver Mapa
+								{t("See location")}
 							</button>
 						</div>
 					</div>
@@ -42,20 +47,17 @@ const CeremonyMap = () => {
 							<div>
 								<StreamIcon />
 							</div>
-							<h1 className="reception-header">
-								Streaming <br />
-								Ceremonia
-							</h1>
-							<span className="reception-time">27 de Julio </span>
+							<h1 className="reception-header">{t("Streaming Ceremony")}</h1>
+							<span className="reception-time">{t("27 July")}</span>
 							<span className="reception-time">11:00 am</span>
 							<span className="reception-adresse">
-								La transmisión del video estará disponible a partir de julio.
+								{t("Streaming Ceremony text")}
 							</span>
 							<div className="container-button">
 								<button
 									target="_blank"
 									className="reception-button-video">
-									Ver en directo
+									{t("See Live")}
 								</button>
 							</div>
 						</div>
@@ -63,10 +65,47 @@ const CeremonyMap = () => {
 				</div>
 				<div className="recepcion-sub-section">
 					<div className="reception-container">
+						<div className="reception-column">
+							<img
+								className="foodIcon"
+								src={foodIcon}
+								alt="foodIcon"
+							/>
+							<h1 className="reception-header">{t("Restaurant")}</h1>
+							<span className="reception-time">{t("27 July")}</span>
+							<span className="reception-time">12:00 am</span>
+							<span className="reception-adresse">
+								1602B Avenue Selkirk, Montréal, Quebec
+							</span>
+							<span className="reception-adresse">Canada QC H3H 1C6</span>
+						</div>
+						<div>
+							<button
+								target="_blank"
+								className="reception-button">
+								{t("See location")}
+							</button>
+						</div>
+					</div>
+				</div>
+				<div className="Invitation-Icon-container">
+					<img
+						className="Invitation-Icon"
+						src={seperatorRight}
+						alt=""
+					/>
+					<img
+						className="Invitation-Icon"
+						src={seperatorLeft}
+						alt=""
+					/>
+				</div>
+				<div className="recepcion-sub-section">
+					<div className="reception-container">
 						<Icon />
 						<div className="reception-column">
-							<h1 className="reception-header">Recepción</h1>
-							<span className="reception-time">10 de Agosto</span>
+							<h1 className="reception-header">{t("Reception")}</h1>
+							<span className="reception-time">{t("10 august")}</span>
 							<span className="reception-time">5:00 pm</span>
 							<span className="reception-cater">
 								Nacatita eventos & catering
@@ -85,7 +124,7 @@ const CeremonyMap = () => {
 										"https://www.google.com/maps/place/C.+Acapulco+879,+La+Molina+15026,+Peru/@-12.0813927,-76.899599,17z/data=!4m6!3m5!1s0x9105c1150d0958ad:0x3d97b6548910f4af!8m2!3d-12.081036!4d-76.8986225!16s%2Fg%2F11y2ymnm8l?entry=ttu"
 									)
 								}>
-								Ver Mapa
+								{t("See location")}
 							</button>
 						</div>
 					</div>
@@ -94,20 +133,17 @@ const CeremonyMap = () => {
 							<div>
 								<StreamIcon />
 							</div>
-							<h1 className="reception-header">
-								Streaming <br />
-								Recepcion
-							</h1>
-							<span className="reception-time">10 de Agosto</span>
+							<h1 className="reception-header">{t("Streaming Reception")}</h1>
+							<span className="reception-time">{t("10 august")}</span>
 							<span className="reception-time">5:00 pm</span>
 							<span className="reception-adresse">
-								La transmisión de video estará disponible a partir de Agosto.
+								{t("Streaming Ceremony text")}
 							</span>
 							<div className="container-button">
 								<button
 									target="_blank"
 									className="reception-button-video">
-									Ver en directo
+									{t("See Live")}
 								</button>
 							</div>
 						</div>

@@ -3,9 +3,12 @@ import { useForm } from "react-hook-form";
 import "./Form.scss";
 import { useState } from "react";
 import SuccessIcon from "./SuccessIcon";
+import { useTranslation } from "react-i18next";
+
 const Form = () => {
 	const [formSuccess, setFormSuccess] = useState(null);
 	const [loading, setLoading] = useState(null);
+	const { t } = useTranslation();
 
 	const env =
 		"https://script.google.com/macros/s/AKfycbyhEIxehKLVrT5TxtWweK-b0rR-wvch9KcvKSvUTYiwIJ7kjHNpdxlVEkLt6zJgysaBmg/exec";
@@ -47,11 +50,8 @@ const Form = () => {
 				<div className="Thank-you-section">
 					<div>
 						<SuccessIcon />
-						<h1 className="thank-you-header">Gracias !</h1>
-						<p className="thank-you-text">
-							Hemos recibido su respuesta para la recepción. Estamos encantados
-							de que puedas hacer parte de esta ocasión especial. Hasta Pronto !
-						</p>
+						<h1 className="thank-you-header">{t("Thanks")}</h1>
+						<p className="thank-you-text">{t("Thanks message")}</p>
 					</div>
 				</div>
 			) : (
@@ -62,7 +62,7 @@ const Form = () => {
 						<input
 							name="Nombre"
 							className={`Form-input ${errors.Nombre ? "error" : ""}`}
-							placeholder="Nombre del asistente"
+							placeholder={t("Name")}
 							{...register("Nombre", { required: true })}
 							aria-invalid={errors.Nombre ? "true" : "false"}
 						/>
@@ -70,7 +70,7 @@ const Form = () => {
 						<input
 							name="Telefono"
 							className="Form-input"
-							placeholder="Teléfono"
+							placeholder={t("Telephone")}
 							{...register("Telefono")}
 						/>
 					</div>
@@ -78,7 +78,7 @@ const Form = () => {
 						<select
 							name="Confirmacion"
 							className={`Form-input ${errors.Confirmacion ? "error" : ""}`}
-							placeholder="Confirmación"
+							placeholder={t("Confirmation")}
 							{...register("Confirmacion", { required: true })}
 							aria-invalid={errors.Confirmación ? "true" : "false"}
 							aria-required={true}>
@@ -86,24 +86,24 @@ const Form = () => {
 								defaultValue
 								value=""
 								disabled>
-								Confirmación
+								{t("Confirmation")}
 							</option>
 							<option
 								value="Sí, asistiremos."
 								aria-selected={false}>
-								Sí, asistiremos.
+								{t("Yes assist")}
 							</option>
 							<option
 								value="Lo siento, no podremos asistir."
 								aria-selected={false}>
-								Lo siento, no podremos asistir.
+								{t("No assist")}
 							</option>
 						</select>
 
 						<textarea
 							name="Mensaje"
 							className="Form-input-text"
-							placeholder="Mensaje para los novios"
+							placeholder={t("Message")}
 							{...register("Mensaje")}
 						/>
 					</div>
@@ -112,13 +112,12 @@ const Form = () => {
 							<div
 								style={{ color: "red" }}
 								className="error-message">
-								{Object.keys(errors).length > 0 &&
-									"Por favor revisa tus respuestas y vuelve a intentarlo"}
+								{Object.keys(errors).length > 0 && t("Error message")}
 							</div>
 							<input
 								className="Form-submit"
 								type="submit"
-								value="Enviar"
+								value={t("Send")}
 							/>
 						</div>
 					) : (

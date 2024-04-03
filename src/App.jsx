@@ -7,7 +7,7 @@ const App = () => {
 			<Routes>
 				<Route
 					exact
-					path="/"
+					path="/:lang"
 					element={<Home />}
 				/>
 			</Routes>
