@@ -7,12 +7,13 @@ const App = () => {
 		<div>
 			<Routes>
 				<Route
-					path="/:lang"
+					path="/"
 					element={<Home />}
 				/>
+
 				<Route
-					path="*"
-					element={<Navigate to="/" />}
+					path="/:lang"
+					element={<Home />}
 				/>
 			</Routes>
 		</div>
