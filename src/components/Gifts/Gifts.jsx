@@ -1,15 +1,13 @@
 import "./Gifts.scss";
 import GiftsIcon from "./GiftsxIcon";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
 
 const Gifts = ({ gifts }) => {
-	const { t } = useTranslation();
-	const { lang } = useParams();
+	const { t, i18n } = useTranslation();
 
 	return (
 		<>
-			{gifts && lang === "es" ? (
+			{gifts && i18n.language === "es" ? (
 				<div className="gifts-component">
 					<div className="gifts-container">
 						<div>
@@ -37,11 +35,6 @@ const Gifts = ({ gifts }) => {
 							<span className="gifts-Span">19132454794018</span>
 							<span className="gifts-Span">CCI</span>
 							<span className="gifts-Span">00219113245479401852</span>
-							<span className="gifts-Span-header">E-transfer</span>
-							<span className="gifts-Span">Nombre: Arseni Dmitriev</span>
-							<span className="gifts-Span">
-								Correo electrónico: 195limitless@gmail.com
-							</span>
 							<span className="gifts-Span">¡Gracias!</span>
 							<p className="gifts-text">
 								Por tu muestra de cariño y espero verte en este dia tan
@@ -50,7 +43,7 @@ const Gifts = ({ gifts }) => {
 						</div>
 					</div>
 				</div>
-			) : gifts && lang === "en" ? (
+			) : gifts && i18n.language === "en" ? (
 				""
 			) : (
 				<div className="gifts-component">

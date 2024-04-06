@@ -16,7 +16,7 @@ i18n
 	.use(initReactI18next) // passes i18n down to react-i18next
 	.init({
 		resources,
-		lng: "es", // React already does escaping
+		lng: "en", // React already does escaping
 		fallbackLng: "en",
 		interpolation: { escapeValue: false },
 	});

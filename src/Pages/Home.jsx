@@ -4,8 +4,6 @@ import portrait from "../Assets/portrait.jpeg";
 import HeaderText from "../components/HeaderText/headerText";
 
 import Icon from "../components/icon";
-
-
 import CarouselImages from "../components/Carousel/carousel";
 import DateCountdown from "../components/DateCountdown/DateCountdown";
 import CeremonyMap from "../components/CeremonyMap/CeremonyMap";
