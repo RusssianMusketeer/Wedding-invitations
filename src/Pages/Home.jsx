@@ -1,10 +1,10 @@
 import "./Home.scss";
 import portrait from "../Assets/portrait.jpeg";
-import Music from "../Assets/music.mp3";
+
 import HeaderText from "../components/HeaderText/headerText";
 
 import Icon from "../components/icon";
-import ReactAudioPlayer from "react-audio-player";
+
 
 import CarouselImages from "../components/Carousel/carousel";
 import DateCountdown from "../components/DateCountdown/DateCountdown";
@@ -16,6 +16,7 @@ import Form from "../components/Form/Form";
 import EndImage from "../components/EndImage/EndImage";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
+import PlayPause from "../components/PlayPause/PlayPause";
 
 const Home = () => {
 	const { t, i18n } = useTranslation();
@@ -32,14 +33,7 @@ const Home = () => {
 						</div>
 						<h1 className="header-name">Arseni & Joselyn</h1>
 
-						<ReactAudioPlayer
-							autoPlay={true}
-							src={Music}
-							loop={true}
-							style={{ Color: "#FF0000" }}
-							controls
-							className="audio-player"
-						/>
+						<PlayPause />
 					</div>
 				</div>
 				<div className="background">
