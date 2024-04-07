@@ -8,6 +8,13 @@
 	font-weight: 400;
 	letter-spacing: 0.02em;
 	margin-bottom: 0;
+	@media (min-width: 250px) {
+		font-size: 2rem;
+	}
+
+	@media (min-width: 640px) {
+		font-size: 2.5rem;
+	}
 }
 
 .header-wedding {
@@ -15,6 +22,20 @@
 	font-weight: 400;
 	font-size: 6rem;
 	margin: 0;
+
+	@media (min-width: 250px) {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+
+	@media (min-width: 480px) {
+		font-size: 5rem;
+		line-height: 7rem;
+	}
+	@media (min-width: 1024px) {
+		font-size: 6rem;
+		line-height: 9rem;
+	}
 }
 
 .wrapper-date-countdown {
@@ -26,6 +47,7 @@
 	border-radius: 0.5rem;
 	display: flex;
 	padding: 0.5rem;
+	margin-top: 2rem;
 
 	.date-containers {
 		height: 3.5rem;
@@ -33,11 +55,33 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (min-width: 250px) {
+			height: 2rem;
+			width: 3rem;
+		}
+		@media (min-width: 320px) {
+			height: 2.5rem;
+			width: 4rem;
+		}
+
+		@media (min-width: 640px) {
+			height: 3.5rem;
+			width: 5rem;
+		}
+
 		&-values {
 			color: white;
 			font-size: 1.5rem;
 			font-weight: 800;
 			font-family: "Droid Serif W01 Regular";
+
+			@media (min-width: 250px) {
+				font-size: 1.2rem;
+			}
+
+			@media (min-width: 640px) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

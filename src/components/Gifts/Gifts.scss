@@ -5,21 +5,29 @@
 	background-color: rgb(24, 27, 55);
 	width: 100%;
 	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
 
 	.gifts-container {
 		background-color: white;
 		max-width: 30rem;
+		width: 100%;
 		height: auto;
-		margin: 0 auto;
+		margin: 0 2rem;
 		padding: 2rem;
 		border-radius: 1rem;
 		box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.47);
 
 		.gifts-text {
-			font-size: 1.2rem;
+			font-size: 1rem;
 			font-family: "Josefin Slab", serif;
 			font-style: italic;
 			font-weight: 400;
+			line-height: 1.3rem;
+
+			@media (min-width: 410px) {
+				font-size: 1.2rem;
+			}
 		}
 
 		.gifts-icon {
@@ -30,7 +38,7 @@
 			display: flex;
 			flex-direction: column;
 			.gifts-header-transferencia {
-				font-size: 3.2rem;
+				font-size: 2.5rem;
 				line-height: 0.6em;
 				text-align: center;
 				font-family: "MonteCarlo";
@@ -38,63 +46,98 @@
 				padding-top: 3rem;
 				border-top: 1px;
 				border-top-style: solid;
+
+				@media (min-width: 410px) {
+					font-size: 3.2rem;
+				}
 			}
 			.gifts-text {
-				font-size: 1.2rem;
+				font-size: 1rem;
 				font-family: "Josefin Slab", serif;
 				font-style: italic;
 				font-weight: 400;
+				line-height: 1.3rem;
+
+				@media (min-width: 410px) {
+					font-size: 1.2rem;
+				}
 			}
 			.gifts-Span {
-				font-size: 1.5rem;
+				font-size: 1.2rem;
 				font-family: "Josefin Slab", serif;
 				font-style: italic;
 				font-weight: 600;
 				margin-top: 0.5rem;
+
+				@media (min-width: 410px) {
+					font-size: 1.5rem;
+				}
 			}
 			.gifts-Span-BCP {
-				font-size: 1.8rem;
+				font-size: 1.5rem;
 				font-family: "Josefin Slab", serif;
 				font-style: italic;
 				font-weight: 700;
 				margin-top: 0.5rem;
+
+				@media (min-width: 410px) {
+					font-size: 1.8rem;
+				}
 			}
 			.gifts-Span-header {
-				font-size: 2rem;
+				font-size: 1.6rem;
 				font-family: "Josefin Slab", serif;
 				font-style: italic;
 				font-weight: 700;
 				margin-top: 1rem;
+				margin-bottom: 1rem;
+
+				@media (min-width: 410px) {
+					font-size: 2rem;
+				}
 			}
 		}
 
 		.gifts-header {
-			font-size: 3.2rem;
+			font-size: 2.5rem;
 			line-height: 0.6em;
 			text-align: center;
 			font-family: "MonteCarlo";
 			font-weight: 400;
+			@media (min-width: 410px) {
+				font-size: 3.2rem;
+			}
 		}
 	}
 
 	.gifts-container-socials {
 		max-width: 40rem;
+		width: 100%;
 		color: white;
 		display: flex;
 		margin: 0 auto;
+		padding: 0 2rem;
 		.gifts-text {
-			font-size: 1.2rem;
+			font-size: 1rem;
 			font-family: "Josefin Slab", serif;
 			font-style: italic;
 			font-weight: 400;
 			line-height: 2rem;
+
+			@media (min-width: 410px) {
+				font-size: 1.2rem;
+			}
 		}
 
 		.gifts-header {
 			margin-top: 3rem;
-			font-size: 2.5rem;
+			font-size: 1.6rem;
 			font-weight: 400;
 			line-height: 2rem;
+
+			@media (min-width: 450px) {
+				font-size: 2.5rem;
+			}
 		}
 	}
 }

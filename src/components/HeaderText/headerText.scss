@@ -9,7 +9,6 @@
 	position: relative;
 	bottom: 2.2rem;
 
-
 	.title {
 		font-size: 3.2rem;
 		line-height: 0.6em;
@@ -17,27 +16,56 @@
 		font-family: "MonteCarlo";
 		font-weight: 400;
 		margin: 2rem 0;
+		padding: 0 1rem;
+		@media (min-width: 250px) {
+			font-size: 2rem;
+			line-height: 1em;
+		}
+
+		@media (min-width: 640px) {
+			font-size: 3.2rem;
+			line-height: 0.6em;
+		}
 	}
 
 	.text {
-		font-size: 19px;
 		font-family: "Josefin Slab", serif;
 		font-style: italic;
 		font-weight: 400;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
 		max-width: 50rem;
+		padding: 0 1rem;
+		@media (min-width: 250px) {
+			line-height: 1.7rem;
+		}
+
+		@media (min-width: 380px) {
+			font-size: 17px;
+			line-height: 1.3rem;
+		}
+
+		@media (min-width: 1024px) {
+			font-size: 19px;
+		}
 	}
 
 	.parents-text {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 3rem;
-		gap: 5rem;
+		gap: 2rem;
 		font-size: 19px;
 		font-family: "Josefin Slab", serif;
 		font-style: italic;
 		font-weight: 400;
+		flex-direction: column;
+		padding: 0 1rem;
+
+		@media (min-width: 480px) {
+			gap: 5rem;
+			flex-direction: row;
+		}
 
 		.names-section {
 			display: flex;

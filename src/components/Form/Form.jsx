@@ -24,7 +24,7 @@ const Form = () => {
 	const onSubmit = async (data) => {
 		setLoading(true);
 		try {
-			const response = await fetch(env, {
+			await fetch(env, {
 				redirect: "follow",
 				method: "POST",
 				body: JSON.stringify(data),
@@ -34,13 +34,9 @@ const Form = () => {
 			});
 
 			setFormSuccess(true);
-
-			console.log(response);
 		} catch (error) {
 			setFormSuccess(false);
 			setLoading(false);
-
-			console.log(error);
 		}
 	};
 
@@ -55,77 +51,79 @@ const Form = () => {
 					</div>
 				</div>
 			) : (
-				<form
-					onSubmit={handleSubmit(onSubmit)}
-					className="Form-component">
-					<div className="Form-name-telephone">
-						<input
-							name="Nombre"
-							className={`Form-input ${errors.Nombre ? "error" : ""}`}
-							placeholder={t("Name")}
-							{...register("Nombre", { required: true })}
-							aria-invalid={errors.Nombre ? "true" : "false"}
-						/>
-
-						<input
-							name="Telefono"
-							className="Form-input"
-							placeholder={t("Telephone")}
-							{...register("Telefono")}
-						/>
-					</div>
-					<div className="Form-confirmation-mesage">
-						<select
-							name="Confirmacion"
-							className={`Form-input ${errors.Confirmacion ? "error" : ""}`}
-							placeholder={t("Confirmation")}
-							{...register("Confirmacion", { required: true })}
-							aria-invalid={errors.Confirmación ? "true" : "false"}
-							aria-required={true}>
-							<option
-								defaultValue
-								value=""
-								disabled>
-								{t("Confirmation")}
-							</option>
-							<option
-								value="Sí, asistiremos."
-								aria-selected={false}>
-								{t("Yes assist")}
-							</option>
-							<option
-								value="Lo siento, no podremos asistir."
-								aria-selected={false}>
-								{t("No assist")}
-							</option>
-						</select>
-
-						<textarea
-							name="Mensaje"
-							className="Form-input-text"
-							placeholder={t("Message")}
-							{...register("Mensaje")}
-						/>
-					</div>
-					{!loading ? (
-						<div className="Form-submit-container">
-							<div
-								style={{ color: "red" }}
-								className="error-message">
-								{Object.keys(errors).length > 0 && t("Error message")}
-							</div>
+				<div className="Form-Section">
+					<form
+						onSubmit={handleSubmit(onSubmit)}
+						className="Form-component">
+						<div className="Form-name-telephone">
 							<input
-								className="Form-submit"
-								type="submit"
-								value={t("Send")}
+								name="Nombre"
+								className={`Form-input ${errors.Nombre ? "error" : ""}`}
+								placeholder={t("Name")}
+								{...register("Nombre", { required: true })}
+								aria-invalid={errors.Nombre ? "true" : "false"}
+							/>
+
+							<input
+								name="Telefono"
+								className="Form-input"
+								placeholder={t("Telephone")}
+								{...register("Telefono")}
 							/>
 						</div>
-					) : (
-						<div className="Form-submit-container-loading">
-							<div className="loader"></div>
+						<div className="Form-confirmation-mesage">
+							<select
+								name="Confirmacion"
+								className={`Form-input ${errors.Confirmacion ? "error" : ""}`}
+								placeholder={t("Confirmation")}
+								{...register("Confirmacion", { required: true })}
+								aria-invalid={errors.Confirmación ? "true" : "false"}
+								aria-required={true}>
+								<option
+									defaultValue
+									value=""
+									disabled>
+									{t("Confirmation")}
+								</option>
+								<option
+									value="Sí, asistiremos."
+									aria-selected={false}>
+									{t("Yes assist")}
+								</option>
+								<option
+									value="Lo siento, no podremos asistir."
+									aria-selected={false}>
+									{t("No assist")}
+								</option>
+							</select>
+
+							<textarea
+								name="Mensaje"
+								className="Form-input-text"
+								placeholder={t("Message")}
+								{...register("Mensaje")}
+							/>
 						</div>
-					)}
-				</form>
+						{!loading ? (
+							<div className="Form-submit-container">
+								<div
+									style={{ color: "red" }}
+									className="error-message">
+									{Object.keys(errors).length > 0 && t("Error message")}
+								</div>
+								<input
+									className="Form-submit"
+									type="submit"
+									value={t("Send")}
+								/>
+							</div>
+						) : (
+							<div className="Form-submit-container-loading">
+								<div className="loader"></div>
+							</div>
+						)}
+					</form>
+				</div>
 			)}
 		</>
 	);

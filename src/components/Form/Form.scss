@@ -1,138 +1,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
 
-.Form-component {
-	width: 38rem;
-	height: auto;
-	margin-bottom: 8rem;
-	margin-top: 1rem;
-
-	.Form-name-telephone {
-		display: flex;
-		gap: 0.5rem;
-		margin-bottom: 0.5rem;
-	}
-	.Form-input {
-		background-color: rgb(239, 238, 238, 0.95);
-		color: rgb(98, 76, 64);
-		border-style: solid;
-		border-color: rgb(239, 238, 238, 0.95);
-		border-width: 2px;
-		border-radius: 5px 5px 5px 5px;
-		padding: 3px;
-		padding-inline-start: 0.9rem;
+.Form-Section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 2rem;
+	.Form-component {
+		max-width: 38rem;
 		width: 100%;
-		box-sizing: border-box;
-		height: 2rem;
-		font-family: "Josefin Slab", serif;
-		font-style: italic;
-		font-weight: 700;
-		font-size: 1.1rem;
-		&:hover {
-			background-color: rgb(246, 235, 228);
-			border-color: rgb(239, 217, 206);
+		height: auto;
+		margin-bottom: 8rem;
+		margin-top: 1rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+
+		.Form-name-telephone {
+			display: flex;
+			gap: 0.5rem;
+			margin-bottom: 0.5rem;
+			flex-direction: column;
+			@media (min-width: 450px) {
+				flex-direction: row;
+			}
 		}
-	}
-
-	.error {
-		background-color: rgb(255, 64, 64, 0.2) !important;
-		border-color: rgb(255, 64, 64) !important;
-		border-style: solid;
-		border-width: 2px;
-		border-radius: 5px 5px 5px 5px;
-		padding: 3px;
-		padding-inline-start: 0.9rem;
-		width: 100%;
-		box-sizing: border-box;
-		height: 2rem;
-		font-family: "Josefin Slab", serif;
-		font-style: italic;
-		font-weight: 700;
-		font-size: 1.1rem;
-	}
-	.Form-input-text {
-		background-color: rgb(239, 238, 238, 0.95);
-		color: rgb(98, 76, 64);
-		border-style: solid;
-		border-color: rgb(239, 238, 238, 0.95);
-		border-width: 2px;
-		border-radius: 5px 5px 5px 5px;
-		padding: 5px;
-		padding-inline-start: 0.9rem;
-		width: 100%;
-		box-sizing: border-box;
-		height: 8rem;
-		resize: none;
-		font-family: "Josefin Slab", serif;
-		font-style: italic;
-		font-weight: 700;
-		font-size: 1.1rem;
-		&:hover {
-			background-color: rgb(246, 235, 228);
-			border-color: rgb(239, 217, 206);
+		.Form-input {
+			background-color: rgb(239, 238, 238, 0.95);
+			color: rgb(98, 76, 64);
+			border-style: solid;
+			border-color: rgb(239, 238, 238, 0.95);
+			border-width: 2px;
+			border-radius: 5px 5px 5px 5px;
+			padding: 3px;
+			padding-inline-start: 0.9rem;
+			width: 100%;
+			box-sizing: border-box;
+			height: 2rem;
+			font-family: "Josefin Slab", serif;
+			font-style: italic;
+			font-weight: 700;
+			font-size: 1.1rem;
+			&:hover {
+				background-color: rgb(246, 235, 228);
+				border-color: rgb(239, 217, 206);
+			}
 		}
-	}
 
-	.Form-confirmation-mesage {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-	.Form-submit-container {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 0.5rem;
-
-		.error-message {
+		.error {
+			background-color: rgb(255, 64, 64, 0.2) !important;
+			border-color: rgb(255, 64, 64) !important;
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 5px 5px 5px 5px;
+			padding: 3px;
+			padding-inline-start: 0.9rem;
+			width: 100%;
+			box-sizing: border-box;
+			height: 2rem;
 			font-family: "Josefin Slab", serif;
 			font-style: italic;
 			font-weight: 700;
 			font-size: 1.1rem;
 		}
-
-		.Form-submit {
+		.Form-input-text {
+			background-color: rgb(239, 238, 238, 0.95);
+			color: rgb(98, 76, 64);
+			border-style: solid;
+			border-color: rgb(239, 238, 238, 0.95);
+			border-width: 2px;
 			border-radius: 5px 5px 5px 5px;
-			transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
-			color: rgb(42, 42, 42);
-			background-color: rgb(170, 170, 170);
-			max-width: 12rem;
+			padding: 5px;
+			padding-inline-start: 0.9rem;
 			width: 100%;
-			height: 2.7rem;
-			border: none;
-			cursor: pointer;
+			box-sizing: border-box;
+			height: 8rem;
+			resize: none;
+			font-family: "Josefin Slab", serif;
+			font-style: italic;
 			font-weight: 700;
-			font-size: 0.9rem;
+			font-size: 1.1rem;
 			&:hover {
-				background-color: rgb(24, 80, 158);
-				color: rgb(255, 255, 255);
+				background-color: rgb(246, 235, 228);
+				border-color: rgb(239, 217, 206);
 			}
 		}
-	}
 
-	.Form-submit-container-loading {
-		display: flex;
-		justify-content: flex-end;
-		margin-top: 0.5rem;
-		.loader {
-			width: 60px;
-			aspect-ratio: 2;
-			--_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
-			background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
-			background-size: calc(100% / 3) 50%;
-			animation: l3 1s infinite linear;
+		.Form-confirmation-mesage {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
 		}
-		@keyframes l3 {
-			20% {
-				background-position: 0% 0%, 50% 50%, 100% 50%;
+		.Form-submit-container {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 0.5rem;
+
+			.error-message {
+				font-family: "Josefin Slab", serif;
+				font-style: italic;
+				font-weight: 700;
+				font-size: 1.1rem;
 			}
-			40% {
-				background-position: 0% 100%, 50% 0%, 100% 50%;
+
+			.Form-submit {
+				border-radius: 5px 5px 5px 5px;
+				transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
+				color: rgb(42, 42, 42);
+				background-color: rgb(170, 170, 170);
+				max-width: 8rem;
+				width: 100%;
+				height: 2.7rem;
+				border: none;
+				cursor: pointer;
+				font-weight: 700;
+				font-size: 0.9rem;
+				&:hover {
+					background-color: rgb(24, 80, 158);
+					color: rgb(255, 255, 255);
+				}
+				@media (min-width: 450px) {
+					max-width: 12rem;
+				}
 			}
-			60% {
-				background-position: 0% 50%, 50% 100%, 100% 0%;
+		}
+
+		.Form-submit-container-loading {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 0.5rem;
+			.loader {
+				width: 60px;
+				aspect-ratio: 2;
+				--_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+				background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+				background-size: calc(100% / 3) 50%;
+				animation: l3 1s infinite linear;
 			}
-			80% {
-				background-position: 0% 50%, 50% 50%, 100% 100%;
+			@keyframes l3 {
+				20% {
+					background-position: 0% 0%, 50% 50%, 100% 50%;
+				}
+				40% {
+					background-position: 0% 100%, 50% 0%, 100% 50%;
+				}
+				60% {
+					background-position: 0% 50%, 50% 100%, 100% 0%;
+				}
+				80% {
+					background-position: 0% 50%, 50% 50%, 100% 100%;
+				}
 			}
 		}
 	}

@@ -8,23 +8,31 @@
 
 	.DressCode-container {
 		margin: 2.5rem 0;
+		padding: 0 1rem;
 		.DressCode-Icon {
 			height: 5rem;
 			width: auto;
 		}
 
 		.DressCode-header {
-			font-size: 3.2rem;
-			line-height: 0.6em;
+			font-size: 2.3rem;
+			line-height: 1em;
 			text-align: center;
 			font-family: "MonteCarlo";
 			font-weight: 400;
+			@media (min-width: 410px) {
+				font-size: 3.2rem;
+				line-height: 0.6em;
+			}
 		}
 		.DressCode-text {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			font-family: "Josefin Slab", serif;
 			font-style: italic;
 			font-weight: 400;
+			@media (min-width: 410px) {
+				font-size: 2rem;
+			}
 		}
 	}
 }
