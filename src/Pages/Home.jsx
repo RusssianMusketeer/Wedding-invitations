@@ -20,7 +20,6 @@ const Home = () => {
 	const { t, i18n } = useTranslation();
 	const { lang } = useParams();
 	i18n.changeLanguage(lang);
-
 	return (
 		<div className="App">
 			<div className="App-header">
