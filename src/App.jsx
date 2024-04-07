@@ -6,12 +6,12 @@ const App = () => {
 		<div>
 			<Routes>
 				<Route
-					path="/"
+					path=""
 					element={<Home />}
 				/>
 
 				<Route
-					path="/:lang"
+					path=":lang"
 					element={<Home />}
 				/>
 			</Routes>
