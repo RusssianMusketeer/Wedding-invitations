@@ -11,6 +11,8 @@ const PlayPause = () => {
 		onend: () => setIsPlaying(false),
 	});
 
+   
+
 	const handleClick = () => {
 		setToogle(!toggle);
 		toggle ? play() : stop();
@@ -20,7 +22,7 @@ const PlayPause = () => {
 		if (!isPlaying && toggle === false) {
 			setToogle(!toggle);
 		}
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isPlaying]);
 
 	return (
