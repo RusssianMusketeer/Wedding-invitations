@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Wedding-invitations/static/css/main.f2347464.css",
-    "main.js": "/Wedding-invitations/static/js/main.0397abde.js",
+    "main.css": "/Wedding-invitations/static/css/main.ae802bbe.css",
+    "main.js": "/Wedding-invitations/static/js/main.9f84aa77.js",
     "static/js/885.97eeaf34.chunk.js": "/Wedding-invitations/static/js/885.97eeaf34.chunk.js",
     "static/js/453.0e191bc4.chunk.js": "/Wedding-invitations/static/js/453.0e191bc4.chunk.js",
-    "static/media/image-2.jpg": "/Wedding-invitations/static/media/image-2.057423470c209598388b.jpg",
     "static/media/music.mp3": "/Wedding-invitations/static/media/music.02bb854bc840be55831a.mp3",
     "static/media/image-4.jpeg": "/Wedding-invitations/static/media/image-4.f2860f0570efb61c05e3.jpeg",
     "static/media/portrait.jpeg": "/Wedding-invitations/static/media/portrait.883dbea134a42820e2d8.jpeg",
     "static/media/Josy-Arseni.jpeg": "/Wedding-invitations/static/media/Josy-Arseni.db857ec0b2006bdd2d3b.jpeg",
     "static/media/image-1.jpeg": "/Wedding-invitations/static/media/image-1.7b45ed6f58fbc8122d5b.jpeg",
     "static/media/back.webp": "/Wedding-invitations/static/media/back.85fa8ee42fc6ef7ba3f7.webp",
+    "static/media/image-5.jpeg": "/Wedding-invitations/static/media/image-5.5a7a149a19015a01e8cf.jpeg",
     "static/media/image-3.webp": "/Wedding-invitations/static/media/image-3.60453630fa5492a65859.webp",
+    "static/media/image-2.jpeg": "/Wedding-invitations/static/media/image-2.093c6da2e568c39a2a65.jpeg",
     "static/media/seperator.webp": "/Wedding-invitations/static/media/seperator.270d3f7ee39a02fb0851.webp",
     "static/media/separador dorado_edited-2.webp": "/Wedding-invitations/static/media/separador dorado_edited-2.66bba8e5f4a2baf9cef0.webp",
     "static/media/slick.svg": "/Wedding-invitations/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -20,13 +21,13 @@
     "static/media/slick.woff": "/Wedding-invitations/static/media/slick.295183786cd8a1389865.woff",
     "static/media/food.svg": "/Wedding-invitations/static/media/food.ebab0553450b357ee506b5f8c595e9af.svg",
     "index.html": "/Wedding-invitations/index.html",
-    "main.f2347464.css.map": "/Wedding-invitations/static/css/main.f2347464.css.map",
-    "main.0397abde.js.map": "/Wedding-invitations/static/js/main.0397abde.js.map",
+    "main.ae802bbe.css.map": "/Wedding-invitations/static/css/main.ae802bbe.css.map",
+    "main.9f84aa77.js.map": "/Wedding-invitations/static/js/main.9f84aa77.js.map",
     "885.97eeaf34.chunk.js.map": "/Wedding-invitations/static/js/885.97eeaf34.chunk.js.map",
     "453.0e191bc4.chunk.js.map": "/Wedding-invitations/static/js/453.0e191bc4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2347464.css",
-    "static/js/main.0397abde.js"
+    "static/css/main.ae802bbe.css",
+    "static/js/main.9f84aa77.js"
   ]
 }
