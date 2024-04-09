@@ -2,9 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image1 from "../../Assets/image-1.jpeg";
-import image2 from "../../Assets/image-2.jpg";
 import image3 from "../../Assets/image-3.webp";
 import image4 from "../../Assets/image-4.jpeg";
+import image2 from "../../Assets/image-2.jpeg";
+import image5 from "../../Assets/image-5.jpeg";
 
 import "../Carousel/carousel.scss";
 
@@ -52,6 +53,13 @@ const Fade = () => {
 						alt="image4"
 						className="images"
 						src={image4}
+					/>
+				</div>
+				<div>
+					<img
+						alt="image5"
+						className="images"
+						src={image5}
 					/>
 				</div>
 			</Slider>
