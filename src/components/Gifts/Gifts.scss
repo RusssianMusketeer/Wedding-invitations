@@ -73,6 +73,17 @@
 					font-size: 1.5rem;
 				}
 			}
+			.gifts-Span-gracias {
+				font-size: 1.2rem;
+				font-family: "Josefin Slab", serif;
+				font-style: italic;
+				font-weight: 600;
+				margin-top: 1.5rem;
+
+				@media (min-width: 410px) {
+					font-size: 1.5rem;
+				}
+			}
 			.gifts-Span-BCP {
 				font-size: 1.5rem;
 				font-family: "Josefin Slab", serif;

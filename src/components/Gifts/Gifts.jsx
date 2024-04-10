@@ -29,16 +29,15 @@ const Gifts = ({ gifts }) => {
 								Si asi lo prefieres puedes realizar transferencia bancaria o por
 								e-transfer
 							</p>
-							<span className="gifts-Span-header">Transferencia bancaria</span>
 							<span className="gifts-Span">Nombre: Joselyn Judith</span>
-							<span className="gifts-Span-BCP">BCP</span>
+							<span className="gifts-Span">BCP</span>
 							<span className="gifts-Span">19132454794018</span>
 							<span className="gifts-Span">CCI</span>
 							<span className="gifts-Span">00219113245479401852</span>
-							<span className="gifts-Span">¡Gracias!</span>
+							<span className="gifts-Span-gracias">¡ Gracias !</span>
 							<p className="gifts-text">
-								Por tu muestra de cariño y espero verte en este dia tan
-								especial.
+								Te agradecemos por tu muestra de cariño y esperamos verte en
+								este día tan especial.
 							</p>
 						</div>
 					</div>

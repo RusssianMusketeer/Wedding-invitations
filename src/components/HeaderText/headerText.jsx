@@ -31,7 +31,7 @@ const HeaderText = ({ text, title }) => {
 					<div className="parents-text">
 						<div>
 							<h3>{t("Girlfriend")}</h3>
-							<span>Rosa Agripina Huaman Chara</span>
+							<span>Rosa Huamán Chara</span>
 						</div>
 						<div>
 							<h3>{t("Boyfriend")}</h3>
