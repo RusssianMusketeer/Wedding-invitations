@@ -2,8 +2,6 @@ import "./PlayPause.scss";
 import { useState, useEffect } from "react";
 import useSound from "use-sound";
 import Music from "../../Assets/music.mp3";
-import MusicPlay from "../../Assets/volume.png";
-import MusicMute from "../../Assets/mute.png";
 import PlayIcon from "./PlayIcon";
 import MuteIcon from "./MuteIcon";
 
