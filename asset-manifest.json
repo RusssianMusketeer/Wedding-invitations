@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/Wedding-invitations/static/css/main.1bf2c4bc.css",
-    "main.js": "/Wedding-invitations/static/js/main.a068fb57.js",
+    "main.css": "/Wedding-invitations/static/css/main.5fcb4606.css",
+    "main.js": "/Wedding-invitations/static/js/main.73d1f203.js",
     "static/js/885.97eeaf34.chunk.js": "/Wedding-invitations/static/js/885.97eeaf34.chunk.js",
     "static/js/453.0e191bc4.chunk.js": "/Wedding-invitations/static/js/453.0e191bc4.chunk.js",
     "static/media/music.mp3": "/Wedding-invitations/static/media/music.02bb854bc840be55831a.mp3",
-    "static/media/image-4.jpeg": "/Wedding-invitations/static/media/image-4.f2860f0570efb61c05e3.jpeg",
     "static/media/image-9.jpeg": "/Wedding-invitations/static/media/image-9.a7976528389a6de2c1d0.jpeg",
     "static/media/mona1.jpg": "/Wedding-invitations/static/media/mona1.36f74baf295308ca1479.jpg",
     "static/media/mona2.jpg": "/Wedding-invitations/static/media/mona2.ad6f9fad9b52ce94e61c.jpg",
@@ -16,6 +15,7 @@
     "static/media/Logo2.png": "/Wedding-invitations/static/media/Logo2.4962a3aba7540c70f6fa.png",
     "static/media/image-7.jpeg": "/Wedding-invitations/static/media/image-7.3c67dc4e8c784a460473.jpeg",
     "static/media/image-3.webp": "/Wedding-invitations/static/media/image-3.60453630fa5492a65859.webp",
+    "static/media/image-4.jpeg": "/Wedding-invitations/static/media/image-4.9554d82c79036bba5ffb.jpeg",
     "static/media/image-2.jpeg": "/Wedding-invitations/static/media/image-2.093c6da2e568c39a2a65.jpeg",
     "static/media/seperator.webp": "/Wedding-invitations/static/media/seperator.270d3f7ee39a02fb0851.webp",
     "static/media/separador dorado_edited-2.webp": "/Wedding-invitations/static/media/separador dorado_edited-2.66bba8e5f4a2baf9cef0.webp",
@@ -25,13 +25,13 @@
     "static/media/slick.woff": "/Wedding-invitations/static/media/slick.295183786cd8a1389865.woff",
     "static/media/food.svg": "/Wedding-invitations/static/media/food.ebab0553450b357ee506b5f8c595e9af.svg",
     "index.html": "/Wedding-invitations/index.html",
-    "main.1bf2c4bc.css.map": "/Wedding-invitations/static/css/main.1bf2c4bc.css.map",
-    "main.a068fb57.js.map": "/Wedding-invitations/static/js/main.a068fb57.js.map",
+    "main.5fcb4606.css.map": "/Wedding-invitations/static/css/main.5fcb4606.css.map",
+    "main.73d1f203.js.map": "/Wedding-invitations/static/js/main.73d1f203.js.map",
     "885.97eeaf34.chunk.js.map": "/Wedding-invitations/static/js/885.97eeaf34.chunk.js.map",
     "453.0e191bc4.chunk.js.map": "/Wedding-invitations/static/js/453.0e191bc4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bf2c4bc.css",
-    "static/js/main.a068fb57.js"
+    "static/css/main.5fcb4606.css",
+    "static/js/main.73d1f203.js"
   ]
 }
