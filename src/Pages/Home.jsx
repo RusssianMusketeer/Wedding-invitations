@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import PlayPause from "../components/PlayPause/PlayPause";
 import Logo2 from "../Assets/Logo2.png";
+import Gratitude from "../components/WordofGratitude/Gratitude";
 
 const Home = () => {
 	const { t, i18n } = useTranslation();
@@ -30,7 +31,7 @@ const Home = () => {
 								src={Logo2}></img>
 						</div>
 						<h1 className="header-name">
-							Arseni <span>&</span> Joselyn
+							Joselyn <span>&</span> Arseni
 						</h1>
 
 						<PlayPause />
@@ -46,6 +47,7 @@ const Home = () => {
 				<CarouselImages carouselBoolean={true} />
 				<DateCountdown />
 				<HeaderText title={t("Fathers bleesing")} />
+				<Gratitude />
 				<CeremonyMap />
 				<Gifts gifts={true} />
 				<DressCode />

@@ -2,6 +2,10 @@ import "./PlayPause.scss";
 import { useState, useEffect } from "react";
 import useSound from "use-sound";
 import Music from "../../Assets/music.mp3";
+import MusicPlay from "../../Assets/volume.png";
+import MusicMute from "../../Assets/mute.png";
+import PlayIcon from "./PlayIcon";
+import MuteIcon from "./MuteIcon";
 
 const PlayPause = () => {
 	const [toggle, setToogle] = useState(true);
@@ -10,8 +14,6 @@ const PlayPause = () => {
 		onplay: () => setIsPlaying(true),
 		onend: () => setIsPlaying(false),
 	});
-
-   
 
 	const handleClick = () => {
 		setToogle(!toggle);
@@ -26,9 +28,7 @@ const PlayPause = () => {
 	}, [isPlaying]);
 
 	return (
-		<div onClick={handleClick}>
-			{toggle ? <div class="box center"></div> : <div class="box pause"></div>}
-		</div>
+		<div onClick={handleClick}>{toggle ? <MuteIcon /> : <PlayIcon />}</div>
 	);
 };
 

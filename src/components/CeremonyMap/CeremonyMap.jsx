@@ -23,6 +23,7 @@ const CeremonyMap = () => {
 							<h1 className="reception-header">{t("Ceremony")}</h1>
 							<span className="reception-time">{t("27 July")}</span>
 							<span className="reception-time">11:00 am</span>
+							<span className="reception-cater">{t("Canada Time")}</span>
 							<span className="reception-cater">Mona salehi notaire</span>
 							<span className="reception-adresse">
 								1602B Avenue Selkirk, Montréal, Quebec
@@ -50,6 +51,7 @@ const CeremonyMap = () => {
 							<h1 className="reception-header">{t("Streaming Ceremony")}</h1>
 							<span className="reception-time">{t("27 July")}</span>
 							<span className="reception-time">11:00 am</span>
+							<span className="reception-cater">{t("Canada Time")}</span>
 							<span className="reception-adresse">
 								{t("Streaming Ceremony text")}
 							</span>
@@ -74,6 +76,7 @@ const CeremonyMap = () => {
 							<h1 className="reception-header">{t("Restaurant")}</h1>
 							<span className="reception-time">{t("27 July")}</span>
 							<span className="reception-time">12:00 am</span>
+							<span className="reception-cater">{t("Canada Time")}</span>
 							<span className="reception-adresse">
 								1602B Avenue Selkirk, Montréal, Quebec
 							</span>
@@ -107,6 +110,7 @@ const CeremonyMap = () => {
 							<h1 className="reception-header">{t("Reception")}</h1>
 							<span className="reception-time">{t("10 august")}</span>
 							<span className="reception-time">5:00 pm</span>
+							<span className="reception-cater">{t("Peru Time")}</span>
 							<span className="reception-cater">
 								Nacatita eventos & catering
 							</span>
@@ -136,6 +140,7 @@ const CeremonyMap = () => {
 							<h1 className="reception-header">{t("Streaming Reception")}</h1>
 							<span className="reception-time">{t("10 august")}</span>
 							<span className="reception-time">5:00 pm</span>
+							<span className="reception-cater">{t("Peru Time")}</span>
 							<span className="reception-adresse">
 								{t("Streaming Ceremony text")}
 							</span>

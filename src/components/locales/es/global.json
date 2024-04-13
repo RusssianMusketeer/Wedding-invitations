@@ -1,12 +1,13 @@
 {
-	"Header": "Ya lo tenemos todo… El traje, la tarta, la decoración, las flores y la comida, pero aun nos falta algo super importante, vuestra presencia en nuestra boda",
+	"Header": "Ya lo tenemos todo… El traje, la tarta, la decoración, las flores y la comida, pero aún nos falta algo super importante, tu presencia en nuestra boda.",
 	"Our Wedding": "Nuestra Boda",
 	"Fathers bleesing": "Con la bendición de nuestros padres",
 	"Boyfriend": "Novio",
 	"Girlfriend": "Novia",
 	"Ceremony": "Ceremonia",
 	"Streaming Ceremony": "Streaming Ceremonia",
-	"27 July": "27 de Julio",
+	"Saturday 27 July": "Sabado 27 de Julio 2024",
+	"27 July": "27 de Julio 2024",
 	"Streaming Ceremony text": "La transmisión del video estará disponible a partir de julio.",
 	"See location": "Ver mapa",
 	"See Live": "Ver en directo",
@@ -18,6 +19,8 @@
 	"Clothes": "Código de Vestimenta",
 	"Respect": "Respetuosamente",
 	"No kids": "Sin niños",
+	"Canada Time": "Hora canadiense",
+	"Peru Time":"Hora de Lima",
 	"Pass": "Pase para 1 persona",
 	"Confirm": "Confirma tu Asistencia",
 	"Thanks": "Gracias !",
@@ -31,5 +34,6 @@
 	"Send": "Enviar",
 	"Error message": "Por favor revisa tus respuestas y vuelve a intentarlo",
 	"Share": "Comparte con nosotros todas tus fotografías del evento, usando el siguiente #hashtag en todas tus publicaciones de Facebook e Instagram.",
-	"HashTag": "#BodaJoselyn&Arseni"
+	"HashTag": "#BodaJoselyn&Arseni",
+	"Pleasure": "¡ Es un placer Invitarte !"
 }

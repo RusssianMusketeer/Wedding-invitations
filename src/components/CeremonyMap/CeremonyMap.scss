@@ -48,13 +48,11 @@
 					flex-direction: column;
 					flex: 1;
 					.reception-header {
-						font-size: 4.5rem;
+						font-size: 4.2rem;
 						line-height: 0.9em;
 						text-align: center;
 						font-family: "MonteCarlo";
 						font-weight: 400;
-						margin-bottom: 2.5rem;
-						margin-top: 1rem;
 					}
 					.reception-adresse {
 						font-size: 1.4rem;
@@ -62,6 +60,13 @@
 						font-family: "Josefin Slab", serif;
 						font-style: italic;
 						font-weight: 400;
+					}
+					.reception-cater {
+						font-size: 1.5rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 400;
+						margin-bottom: 1.5rem;
 					}
 					.container-button {
 						height: 100%;
@@ -71,7 +76,7 @@
 						.reception-button-video {
 							width: 9.5rem;
 							height: 3.2rem;
-							background-color: rgb(134, 134, 134);
+							background-color: rgb(174 174 174);
 							border: none;
 							border-radius: 0.3rem;
 							font-family: "Heebo", sans-serif;
@@ -87,7 +92,7 @@
 						}
 					}
 					.reception-time {
-						font-size: 2rem;
+						font-size: 2.5rem;
 						font-family: "Josefin Slab", serif;
 						font-style: italic;
 						font-weight: 600;
@@ -110,19 +115,24 @@
 					}
 
 					.reception-header {
-						font-size: 4.5rem;
+						font-size: 4.2rem;
 						line-height: 0.9em;
 						text-align: center;
 						font-family: "MonteCarlo";
 						font-weight: 400;
-						margin-bottom: 2.5rem;
 					}
 					.reception-time {
-						font-size: 2rem;
+						font-size: 2.5rem;
 						font-family: "Josefin Slab", serif;
 						font-style: italic;
 						font-weight: 600;
 						margin-bottom: 1.5rem;
+					}
+					.reception-time-hour {
+						font-size: 2.5rem;
+						font-family: "Josefin Slab", serif;
+						font-style: italic;
+						font-weight: 600;
 					}
 
 					.reception-cater {

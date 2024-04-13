@@ -16,7 +16,7 @@ const DateCountdown = () => {
 	return (
 		<>
 			<div>
-				<p className="date-text">{t("27 July")}</p>
+				<p className="date-text">{t("Saturday 27 July")}</p>
 				<h1 className="header-wedding">{t("Our Wedding")}</h1>
 			</div>
 			<div className="wrapper-date-countdown">

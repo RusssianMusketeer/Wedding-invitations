@@ -6,7 +6,8 @@
 	"Girlfriend": "Fiancée",
 	"Ceremony": "Ceremony",
 	"Streaming Ceremony": "Streaming Ceremony",
-	"27 July": "27 of July",
+	"Saturday 27 July": "Saturday 27 of July 2024",
+	"27 July": "27 of July 2024",
 	"Streaming Ceremony text": "Streaming video will be available starting in July.",
 	"See location": "See the map",
 	"See Live": "Watch live",
@@ -17,6 +18,8 @@
 	"Clothes": "Dress code",
 	"Respect": "Respectfully",
 	"No kids": "Without children",
+	"Canada Time": "Canadien time",
+	"Peru Time": "Time in Lima",
 	"Pass": "Pass for 1 person",
 	"Confirm": "Confirm your attendance",
 	"Thanks": "Thank you",
@@ -30,5 +33,6 @@
 	"Send": "Send",
 	"Error message": "Please check your answers and try again.",
 	"Share": "Share with us all your photographs from the event, using the following #hashtag in all your Facebook and Instagram posts.",
-	"HashTag": "#WeddingJoselyn&Arseni"
+	"HashTag": "#WeddingJoselyn&Arseni",
+	"Pleasure": "It's a pleasure to invite you !"
 }
