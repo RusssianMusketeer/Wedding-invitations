@@ -8,10 +8,12 @@ import { useTranslation } from "react-i18next";
 const Form = () => {
 	const [formSuccess, setFormSuccess] = useState(null);
 	const [loading, setLoading] = useState(null);
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	const env =
-		"https://script.google.com/macros/s/AKfycbyhEIxehKLVrT5TxtWweK-b0rR-wvch9KcvKSvUTYiwIJ7kjHNpdxlVEkLt6zJgysaBmg/exec";
+		i18n.language === "es"
+			? "https://script.google.com/macros/s/AKfycbyhEIxehKLVrT5TxtWweK-b0rR-wvch9KcvKSvUTYiwIJ7kjHNpdxlVEkLt6zJgysaBmg/exec"
+			: "https://script.google.com/macros/s/AKfycbwleHPUztyh_PZzD4Q8qZJ_ELjuSho6iKVVODKdr3aXwSlMIU2Uc-3lG_SwESCrn410Tw/exec";
 
 	const {
 		register,

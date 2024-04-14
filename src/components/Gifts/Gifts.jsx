@@ -42,7 +42,7 @@ const Gifts = ({ gifts }) => {
 						</div>
 					</div>
 				</div>
-			) : gifts && i18n.language === "en" ? (
+			) : gifts ? (
 				""
 			) : (
 				<div className="gifts-component">
