@@ -14,6 +14,10 @@ const App = () => {
 					path=":lang"
 					element={<Home />}
 				/>
+				<Route
+					path="/restaurant"
+					element={<Home />}
+				/>
 			</Routes>
 		</div>
 	);

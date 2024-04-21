@@ -4,16 +4,18 @@ import "./Form.scss";
 import { useState } from "react";
 import SuccessIcon from "./SuccessIcon";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 const Form = () => {
 	const [formSuccess, setFormSuccess] = useState(null);
 	const [loading, setLoading] = useState(null);
-	const { t, i18n } = useTranslation();
+	const location = useLocation();
+	const registrationOption =
+		location.pathname === "/restaurant"
+			? "restaurant"
+			: "ceremony and the restaurant";
 
-	const env =
-		i18n.language === "es"
-			? "https://script.google.com/macros/s/AKfycbyhEIxehKLVrT5TxtWweK-b0rR-wvch9KcvKSvUTYiwIJ7kjHNpdxlVEkLt6zJgysaBmg/exec"
-			: "https://script.google.com/macros/s/AKfycbwleHPUztyh_PZzD4Q8qZJ_ELjuSho6iKVVODKdr3aXwSlMIU2Uc-3lG_SwESCrn410Tw/exec";
+	const { t, i18n } = useTranslation();
 
 	const {
 		register,
@@ -26,14 +28,59 @@ const Form = () => {
 	const onSubmit = async (data) => {
 		setLoading(true);
 		try {
-			await fetch(env, {
-				redirect: "follow",
-				method: "POST",
-				body: JSON.stringify(data),
-				headers: {
-					"Content-Type": "text/plain;charset=utf-8",
-				},
-			});
+			if (i18n.language === "en" && location.pathname !== "/restaurant") {
+				await Promise.all([
+					fetch(
+						"https://script.google.com/macros/s/AKfycbyLIDiyEeB0ixz5QvNY3WMXwxcCrXtc4ELlNiuy1XW1XPVjQo46Yex2hgAUk52ip3AFsw/exec",
+						{
+							redirect: "follow",
+							method: "POST",
+							body: JSON.stringify(data),
+							headers: {
+								"Content-Type": "text/plain;charset=utf-8",
+							},
+						}
+					),
+					fetch(
+						"https://script.google.com/macros/s/AKfycbwleHPUztyh_PZzD4Q8qZJ_ELjuSho6iKVVODKdr3aXwSlMIU2Uc-3lG_SwESCrn410Tw/exec",
+						{
+							redirect: "follow",
+							method: "POST",
+							body: JSON.stringify(data),
+							headers: {
+								"Content-Type": "text/plain;charset=utf-8",
+							},
+						}
+					),
+				]);
+			} else if (
+				i18n.language === "en" &&
+				location.pathname === "/restaurant"
+			) {
+				await fetch(
+					"https://script.google.com/macros/s/AKfycbyLIDiyEeB0ixz5QvNY3WMXwxcCrXtc4ELlNiuy1XW1XPVjQo46Yex2hgAUk52ip3AFsw/exec",
+					{
+						redirect: "follow",
+						method: "POST",
+						body: JSON.stringify(data),
+						headers: {
+							"Content-Type": "text/plain;charset=utf-8",
+						},
+					}
+				);
+			} else {
+				await fetch(
+					"https://script.google.com/macros/s/AKfycbyhEIxehKLVrT5TxtWweK-b0rR-wvch9KcvKSvUTYiwIJ7kjHNpdxlVEkLt6zJgysaBmg/exec",
+					{
+						redirect: "follow",
+						method: "POST",
+						body: JSON.stringify(data),
+						headers: {
+							"Content-Type": "text/plain;charset=utf-8",
+						},
+					}
+				);
+			}
 
 			setFormSuccess(true);
 		} catch (error) {
@@ -54,6 +101,12 @@ const Form = () => {
 				</div>
 			) : (
 				<div className="Form-Section">
+					{i18n.language !== "es" ? (
+						<div className="info-location-section">{`Currently signing up for the ${registrationOption}`}</div>
+					) : (
+						""
+					)}
+
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						className="Form-component">
