@@ -96,7 +96,11 @@ const Form = () => {
 					<div>
 						<SuccessIcon />
 						<h1 className="thank-you-header">{t("Thanks")}</h1>
-						<p className="thank-you-text">{t("Thanks message")}</p>
+						<p className="thank-you-text">
+							{i18n.language === "en"
+								? `We have received your response for the ${registrationOption}. We are delighted that you can be part of this special occasion. See you soon !`
+								: t("Thanks message")}
+						</p>
 					</div>
 				</div>
 			) : (
