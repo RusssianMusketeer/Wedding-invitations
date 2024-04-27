@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 
 .Header-Text {
 	background-color: rgb(186, 190, 213);
@@ -13,7 +14,7 @@
 		font-size: 3.2rem;
 		line-height: 0.6em;
 		text-align: center;
-		font-family: "MonteCarlo";
+		font-family: "MonteCarlo", "Playfair";
 		font-weight: 400;
 		margin: 2rem 0;
 		padding: 0 1rem;

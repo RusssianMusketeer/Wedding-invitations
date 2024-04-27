@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
 @import url("https://db.onlinewebfonts.com/c/4c0277bcba75a3570694a90365e79f29?family=Droid+Serif+W01+Regular");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 
 .date-text {
 	font-size: 2.5rem;
@@ -18,7 +19,7 @@
 }
 
 .header-wedding {
-	font-family: "MonteCarlo";
+	font-family: "MonteCarlo", "Playfair";
 	font-weight: 400;
 	font-size: 6rem;
 	margin: 0;
@@ -73,7 +74,7 @@
 			color: white;
 			font-size: 1.5rem;
 			font-weight: 800;
-			font-family: "Droid Serif W01 Regular";
+			font-family: "Droid Serif W01 Regular", "Playfair";
 
 			@media (min-width: 250px) {
 				font-size: 1.2rem;

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 
 .CeremonyMap {
 	margin-top: 1rem;
@@ -51,7 +52,7 @@
 						font-size: 4.2rem;
 						line-height: 0.9em;
 						text-align: center;
-						font-family: "MonteCarlo";
+						font-family: "MonteCarlo", "Playfair";
 						font-weight: 400;
 					}
 					.reception-adresse {
@@ -79,7 +80,7 @@
 							background-color: rgb(174 174 174);
 							border: none;
 							border-radius: 0.3rem;
-							font-family: "Heebo", sans-serif;
+							font-family: "Heebo", "Playfair", sans-serif;
 							font-weight: 600;
 							color: rgb(69, 69, 69);
 							transition: color 0.4s ease 0s, background-color 0.4s ease 0s;

@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Parisienne&family=Rouge+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 
 .Invitation-component {
 	margin-top: 2rem;
 	padding: 0 1rem;
 
 	.container-pass {
-		font-family: "MonteCarlo";
+		font-family: "MonteCarlo", "Playfair";
 
 		font-size: 1rem;
 		border-top-style: solid;
@@ -49,7 +50,7 @@
 		font-size: 2.5rem;
 		line-height: 1em;
 		text-align: center;
-		font-family: "MonteCarlo";
+		font-family: "MonteCarlo", "Playfair";
 		font-weight: 400;
 		margin-top: 0.5rem;
 

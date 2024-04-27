@@ -75,17 +75,24 @@ const CeremonyMap = () => {
 							/>
 							<h1 className="reception-header">{t("Restaurant")}</h1>
 							<span className="reception-time">{t("27 July")}</span>
-							<span className="reception-time">12:00 am</span>
+							<span className="reception-time">1:00 pm</span>
 							<span className="reception-cater">{t("Canada Time")}</span>
 							<span className="reception-adresse">
-								1602B Avenue Selkirk, Montréal, Quebec
+								2146 Rue Lucien-Thimens, Montréal, Quebec
 							</span>
-							<span className="reception-adresse">Canada QC H3H 1C6</span>
+							<span className="reception-adresse">
+								Saint-Laurent, QC H4R 1L1
+							</span>
 						</div>
 						<div>
 							<button
 								target="_blank"
-								className="reception-button">
+								className="reception-button"
+								onClick={() =>
+									handleClick(
+										"https://www.google.com/maps/place/Kavkaz/@45.5091576,-73.6972161,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc919738fc92bbf:0xa4e90d6cd83eb60d!8m2!3d45.5091576!4d-73.6946412!16s%2Fg%2F11rkf7zhm5?entry=ttu"
+									)
+								}>
 								{t("See location")}
 							</button>
 						</div>

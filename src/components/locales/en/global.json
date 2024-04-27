@@ -34,5 +34,8 @@
 	"Error message": "Please check your answers and try again.",
 	"Share": "Share with us all your photographs from the event, using the following #hashtag in all your Facebook and Instagram posts.",
 	"HashTag": "#WeddingJoselyn&Arseni",
-	"Pleasure": "It's a pleasure to invite you !"
+	"Pleasure": "It's a pleasure to invite you !",
+	"Thanks response": "We have received your response for the {{registrationOption}}. We are delighted that you can be part of this special occasion. See you soon !",
+	"version-signup": "Currently signing up for the {{registrationOption}}",
+	"Allergy": "Do you have any food allergies ?"
 }
