@@ -58,7 +58,13 @@ const CeremonyMap = () => {
 							<div className="container-button">
 								<button
 									target="_blank"
-									className="reception-button-video">
+									className="reception-button-video"
+									onClick={() =>
+										handleClick(
+											"https://meet.google.com/okc-yyey-zsy"
+										)
+									}
+									>
 									{t("See Live")}
 								</button>
 							</div>

@@ -30,7 +30,7 @@ const Gifts = ({ gifts }) => {
 								e-transfer
 							</p>
 							<span className="gifts-Span">Nombre: Joselyn Judith</span>
-							<span className="gifts-Span">BCP</span>
+							<span className="gifts-Span">BCP ~ cta. ahorros</span>
 							<span className="gifts-Span">19132454794018</span>
 							<span className="gifts-Span">CCI</span>
 							<span className="gifts-Span">00219113245479401852</span>
